@@ -1,0 +1,8 @@
+package seleniumPractice.EndTOEndProject;
+
+public class base {
+
+	public void initialize() {
+		
+	}
+}

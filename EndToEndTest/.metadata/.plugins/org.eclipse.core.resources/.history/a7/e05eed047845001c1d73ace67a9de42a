@@ -1,0 +1,95 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		//selenium code
+		System.setProperty("webdriver.chrome.driver", "C:\\D Drive\\Tanvi Data\\selenium\\chromedriver.exe");
+		
+		//create Driver obj for chrome browser
+		
+		WebDriver driver = new ChromeDriver();
+		/*Class 1
+		driver.get("http://google.com");//hit the URL on browser
+		System.out.println(driver.getTitle());//to verify if title of page is correct
+		
+		System.out.println(driver.getCurrentUrl());//to verify if u landed on correct URL
+		
+		System.out.println(driver.getPageSource());//if right click is disable
+		
+		//Now lets assume original scenario, u open the google and want to go to yahoo.com, then 
+		
+		driver.get("http://yahoo.com");// this will navigate to yahoo home page.
+		
+		//now u want to go back to google.com because that is waht a previous option
+		
+		driver.navigate().back();// driver.navigate().forward();
+	
+		// recommended to close the browser as if u run 100 test cases 100 browser instances will be open
+		driver.close();// only current driver instance// it closes the window where focus is present
+		// ex: u are in child's child window i.e. 3rd window it will close only 3rd window.
+		// where as quit will close all the open window i.e. all 3 windows
+		driver.quit();// all browsers open by selenium script
+		*/
+		
+		/* learning of id, name and linktext
+		driver.get("http://facebook.com");
+		driver.findElement(By.id("email")).sendKeys("this is my first code");
+		driver.findElement(By.linkText("forgot account?")).click();
+		*/
+		
+		// to know compound class name are not allowed in selenium
+		driver.get("https://login.salesforce.com/");
+		//		driver.findElement(By.id("username")).sendKeys("tanvichopade");
+		//		driver.findElement(By.id("password")).sendKeys("Password1234");
+		//		driver.findElement(By.className("button r4 wide primary")).click();
+		//		driver.findElement(By.xpath("//*[@id=\"Login\"]")).click();
+//		driver.findElement(By.cssSelector("#username")).sendKeys("tanvichopade");
+		//		driver.findElement(By.cssSelector("#password")).sendKeys("Password1234");
+//		driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("Pass");
+//		driver.findElement(By.cssSelector("#Login")).click();
+//		System.out.println(driver.findElement(By.cssSelector("#error")).getText());
+		/*
+		---- Syntax for creating custom xpath
+		 		//tagName[@attribute='value']
+		 		for example: //input[@value='Log In']
+		 		Another ex: //*[@id='password']
+				here * is regular expression, which says u can take any element which has id as attribute and value as password. whether it is input tag or any different tagname
+		---- Syntax for creating custom cssselector
+				tagName[attribute='value']
+				for example: input[value='Log In']
+		 		Another ex: [id='password']
+				here to make as regular expression, you do not need to mention anything, which says u can take any element which has id as attribute and value as password. whether it is input tag or any different tagname
+		 		Other way to create - Another syntax for css
+				tagName#id
+				for ex: <input class="input r4 wide mb16 mt8 username" type="email" value="" name="username" id="username" aria-describedby="error" style="display: block;">
+				input#username i.e. #username(we get when we select copy selector from browser
+				but the only limitation is element should have id attribute, or else u can use id locator
+		  */
+		/*//custom xpath
+		driver.findElement(By.xpath("//input[@id='username']")).sendKeys("tanvichopade");
+		driver.findElement(By.xpath("//input[@name='pw']")).sendKeys("password");
+		driver.findElement(By.xpath("//*[@value='Log In']")).click();
+		//end of custom xpath
+		*/
+		
+		/*//custom cssselector
+				driver.findElement(By.cssSelector("input[id='username']")).sendKeys("tanvichopade");
+				driver.findElement(By.cssSelector("input[name='pw']")).sendKeys("password");
+				driver.findElement(By.cssSelector("[value='Log In']")).click();
+		//end of custom cssselector
+		 */
+		/*
+		 * parent-child relationship xpath - define xpath for parent/tagnames
+		 * you have to traverse and add "/" and then tagName
+		 * for example:
+		 * //div[@name='value']/div/div[2]/div/input
+		 */
+	}
+
+}

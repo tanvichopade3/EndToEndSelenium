@@ -1,0 +1,7 @@
+00:22:15.197 [main] INFO  resources.base - driver is initialized
+00:22:32.340 [main] INFO  resources.base - text value - nonrestrictedUser
+00:22:32.811 [main] INFO  resources.base - login is successful
+00:22:37.183 [main] INFO  resources.base - text value - restrictedUser
+00:22:37.443 [main] INFO  resources.base - login is successful
+00:22:37.545 [main] INFO  resources.base - HomePage title validation
+00:22:37.729 [main] INFO  resources.base - Navigation bar validation

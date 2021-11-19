@@ -1,0 +1,25 @@
+package seleniumPractice.EndTOEndProject;
+
+import java.io.IOException;
+
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import pageObjects.landingPage;
+import pageObjects.loginPage;
+import resources.base;
+
+public class ValidateTitle extends base {
+
+	@Test(dataProvider = "getData")
+	public void basePageNavigation(String userName, String password, String text) throws IOException {
+		driver = initializeDriver();
+		driver.get("http://qaclickacademy.com/");
+
+		landingPage landingPg = new landingPage(driver);
+	
+		String homePageTitle =  landingPg.getTitle().getText();
+		System.out.println(homePageTitle);
+	}
+}

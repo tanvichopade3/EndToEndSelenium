@@ -1,0 +1,47 @@
+package seleniumPractice.EndTOEndProject;
+
+import java.io.IOException;
+
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import pageObjects.landingPage;
+import pageObjects.loginPage;
+import resources.base;
+
+public class HomePage extends base {
+
+	@Test
+	public void basePageNavigation() throws IOException {
+		driver = initializeDriver();
+		driver.get("http://qaclickacademy.com/");
+
+		landingPage landingPg = new landingPage(driver);
+		WebElement loginLink = landingPg.getLogin();
+		loginLink.click();
+		
+		loginPage loginPg = new loginPage(driver);
+		loginPg.getEmail().sendKeys("tanvi@gmail.com");
+		loginPg.getPassword().sendKeys("tanvi");
+		loginPg.getLoginButton().click();
+	}
+	
+	@DataProvider
+	public Object[][] getData() {
+
+		Object[][] data = new Object[1][2];
+
+		data[0][0] = "nonrestrictedUser@ds.com";
+		data[0][1] = "firstPassword";
+		data[0][2] = "secondUserName";
+		
+		data[1][0] = "restrictedUser@ds.com";
+		data[1][1] = "thirdUserName";
+		data[1][2] = "thirdPassword";
+
+		return data;
+	}
+
+
+}

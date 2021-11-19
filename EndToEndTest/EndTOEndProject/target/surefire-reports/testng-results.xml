@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="20123" started-at="2021-11-19T22:34:03 IST" finished-at="2021-11-19T22:34:24 IST">
+    <groups>
+    </groups>
+    <test name="HomePage" duration-ms="9792" started-at="2021-11-19T22:34:03 IST" finished-at="2021-11-19T22:34:13 IST">
+      <class name="seleniumPractice.EndTOEndProject.HomePage">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:seleniumPractice.EndTOEndProject.HomePage@385e9564]" name="initialize" is-config="true" duration-ms="2659" started-at="2021-11-19T22:34:03 IST" finished-at="2021-11-19T22:34:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:seleniumPractice.EndTOEndProject.HomePage@385e9564]" name="basePageNavigation" duration-ms="4177" started-at="2021-11-19T22:34:06 IST" data-provider="getData" finished-at="2021-11-19T22:34:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonrestrictedUser@ds.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[nonrestrictedUser]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:seleniumPractice.EndTOEndProject.HomePage@385e9564]" name="basePageNavigation" duration-ms="2786" started-at="2021-11-19T22:34:10 IST" data-provider="getData" finished-at="2021-11-19T22:34:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[restrictedUser@ds.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[restrictedUser]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:seleniumPractice.EndTOEndProject.HomePage@385e9564]" name="tearDown" is-config="true" duration-ms="117" started-at="2021-11-19T22:34:13 IST" finished-at="2021-11-19T22:34:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- seleniumPractice.EndTOEndProject.HomePage -->
+    </test> <!-- HomePage -->
+    <test name="ValidateTitle" duration-ms="5766" started-at="2021-11-19T22:34:13 IST" finished-at="2021-11-19T22:34:19 IST">
+      <class name="seleniumPractice.EndTOEndProject.ValidateTitle">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:seleniumPractice.EndTOEndProject.ValidateTitle@7a675056]" name="initialize" is-config="true" duration-ms="5542" started-at="2021-11-19T22:34:13 IST" finished-at="2021-11-19T22:34:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="validationHeaderTitle()[pri:0, instance:seleniumPractice.EndTOEndProject.ValidateTitle@7a675056]" name="validationHeaderTitle" duration-ms="65" started-at="2021-11-19T22:34:19 IST" finished-at="2021-11-19T22:34:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validationHeaderTitle -->
+        <test-method status="PASS" signature="validationMoneyGuaranteeTitle()[pri:0, instance:seleniumPractice.EndTOEndProject.ValidateTitle@7a675056]" name="validationMoneyGuaranteeTitle" duration-ms="42" started-at="2021-11-19T22:34:19 IST" finished-at="2021-11-19T22:34:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validationMoneyGuaranteeTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:seleniumPractice.EndTOEndProject.ValidateTitle@7a675056]" name="tearDown" is-config="true" duration-ms="113" started-at="2021-11-19T22:34:19 IST" finished-at="2021-11-19T22:34:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- seleniumPractice.EndTOEndProject.ValidateTitle -->
+    </test> <!-- ValidateTitle -->
+    <test name="APITest" duration-ms="1" started-at="2021-11-19T22:34:19 IST" finished-at="2021-11-19T22:34:19 IST">
+    </test> <!-- APITest -->
+    <test name="ValidateNav" duration-ms="4509" started-at="2021-11-19T22:34:19 IST" finished-at="2021-11-19T22:34:24 IST">
+      <class name="seleniumPractice.EndTOEndProject.ValidateNavigationBar">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:seleniumPractice.EndTOEndProject.ValidateNavigationBar@21b2e768]" name="initialize" is-config="true" duration-ms="4304" started-at="2021-11-19T22:34:19 IST" finished-at="2021-11-19T22:34:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:seleniumPractice.EndTOEndProject.ValidateNavigationBar@21b2e768]" name="basePageNavigation" duration-ms="77" started-at="2021-11-19T22:34:23 IST" finished-at="2021-11-19T22:34:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:seleniumPractice.EndTOEndProject.ValidateNavigationBar@21b2e768]" name="tearDown" is-config="true" duration-ms="125" started-at="2021-11-19T22:34:23 IST" finished-at="2021-11-19T22:34:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- seleniumPractice.EndTOEndProject.ValidateNavigationBar -->
+    </test> <!-- ValidateNav -->
+  </suite> <!-- Suite -->
+</testng-results>

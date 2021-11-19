@@ -1,0 +1,25 @@
+package seleniumPractice.EndTOEndProject;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class base {
+
+	public void initialize() {
+
+		WebDriver driver;
+
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\D Drive\\Tanvi Data\\selenium\\chromedriver.exe");
+		driver = new ChromeDriver();
+
+		System.setProperty("webdriver.gecko.driver", "C:\\D Drive\\Tanvi Data\\selenium\\geckodriver.exe");
+		driver = new FirefoxDriver();
+		
+		System.setProperty("webdriver.edge.driver", "C:\\D Drive\\Tanvi Data\\selenium\\msedgedriver.exe");
+		driver = new EdgeDriver();
+
+	}
+}

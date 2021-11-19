@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<!-- <suite name="Suite" parallel ="tests"> -->
+	<test name="HomePage">
+		<classes>
+			<class name="seleniumPractice.EndTOEndProject.HomePage" />
+		</classes>
+	</test>
+
+	<test name="ValidateTitle">
+		<classes>
+			<class name="seleniumPractice.EndTOEndProject.ValidateTitle" />
+		</classes>
+	</test>
+
+	<test name="APITest">
+		<classes>
+			<class name="seleniumPractice.EndTOEndProject.AppTest" />
+		</classes>
+	</test>
+
+	<test name="ValidateNav">
+		<classes>
+			<class
+				name="seleniumPractice.EndTOEndProject.ValidateNavigationBar" />
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->

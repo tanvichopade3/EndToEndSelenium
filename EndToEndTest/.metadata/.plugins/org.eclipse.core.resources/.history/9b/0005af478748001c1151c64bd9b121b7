@@ -1,0 +1,34 @@
+package seleniumPractice.EndTOEndProject;
+
+import java.io.IOException;
+
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import pageObjects.landingPage;
+import pageObjects.loginPage;
+import resources.base;
+
+public class ValidateTitle extends base {
+
+	@Test
+	public void basePageNavigation() throws IOException {
+		driver = initializeDriver();
+		driver.get("http://qaclickacademy.com/");
+
+		landingPage landingPg = new landingPage(driver);
+
+		String homePageTitle = landingPg.getTitle().getText();
+		System.out.println(homePageTitle);
+
+		Assert.assertEquals(homePageTitle, "FEATURED COURSES");
+
+		Boolean val = landingPg.getNavigationBar().isDisplayed();
+		//System.out.println("val  - " + val);
+		Assert.assertTrue(val);
+		// .nav.navbar-nav.navbar-right
+
+	}
+}
